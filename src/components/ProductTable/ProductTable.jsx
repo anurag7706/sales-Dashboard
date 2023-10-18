@@ -10,8 +10,10 @@ import InputAdornment from '@mui/material/InputAdornment';
 import TextField from '@mui/material/TextField';
 import Grid from '@mui/material/Grid';
 import SearchIcon from '@mui/icons-material/Search';
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import pr1Image from '../../assets/pr1.png';
+import pr2Image from '../../assets/pr2.png';
 
 const ProductTable = () => {
   // Example data
@@ -23,17 +25,17 @@ const ProductTable = () => {
       stock: 32,
       price: 45.99,
       totalSales: 20,
-      imageSrc: 'src/assets/pr1.png'
+      imageSrc: pr1Image,
     },
     {
-        id: 2,
-        name: 'Sarphens Illustration',
-        description: 'Locom ipsum dolor sit amot. consoctotur adipiscing olit',
-        stock: 15,
-        price: 29.99,
-        totalSales: 10,
-        imageSrc: 'src/assets/pr2.png'
-      },
+      id: 2,
+      name: 'Sarphens Illustration',
+      description: 'Locom ipsum dolor sit amot. consoctotur adipiscing olit',
+      stock: 15,
+      price: 29.99,
+      totalSales: 10,
+      imageSrc: pr2Image,
+    },
     // Add more entries here
   ];
 
@@ -83,15 +85,17 @@ const ProductTable = () => {
                         />
                       </Grid>
                       <Grid item>
-                          <h4 style={{ fontSize: '1.2rem' }}>
-                            {product.name}
-                          </h4>
+                        <h4 style={{ fontSize: '1.2rem' }}>
+                          {product.name}
+                        </h4>
                         <p>{product.description}</p>
                       </Grid>
                     </Grid>
                   </TableCell>
                   <TableCell>{product.stock} in stock</TableCell>
-                  <TableCell><strong>${product.price.toFixed(2)}</strong></TableCell>
+                  <TableCell>
+                    <strong>${product.price.toFixed(2)}</strong>
+                  </TableCell>
                   <TableCell>{product.totalSales}</TableCell>
                 </TableRow>
               ))}
