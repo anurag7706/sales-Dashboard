@@ -1,6 +1,6 @@
 # React + Vite
 
-Deployment : https://github.com/anurag7706/sales-Dashboard
+Deployment : [https://github.com/anurag7706/sales-Dashboard](https://sales-dashboard-demo.netlify.app/)
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
